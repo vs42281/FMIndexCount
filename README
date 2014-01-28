@@ -5,7 +5,8 @@ In order to modify application, it is necessary to create a project in NetBeans 
 Probably it is possible to create project in other IDE-s (e.g. Eclipse) but I haven’t tried.
 
 
-Executable version of application can be found under Release V1.0 and can be start with command:
+Executable version of application can be found under Release V1.0 and can be start with
+command:
 
         java -jar FMIndexCout.jar
 
@@ -13,7 +14,21 @@ or, in case that default amount of allocated memory is not enough:
 
 		java -Xms1024m -Xmx1024m -jar FMIndexCout.jar
 
-where 1024m means initial and maximum amount of "Heap" memory allocated to Java virtual machine.
-This heap size is enough for processing of human chromosome 1 from "UCSC Genome Bioinformatics"
-site. It is possible to increase the heap size even more, up to the limit given by computer and
-operating system used.
+where 1024m means initial and maximum amount of "Heap" memory allocated to Java virtual
+machine. This heap size is enough for processing of human chromosome 1 from "UCSC Genome
+Bioinformatics" site. It is possible to increase the heap size even more, up to the limit
+given by computer andoperating system used.
+
+Instruction for use are given in file:
+
+        Seminarski rad\Seminar_Bioinformatika_Vedran_Sabados_FMIndexCount.doc
+
+Working examples are:
+
+        Data\Chr1_010.fa
+		Data\Txt_test.txt
+		Data\Test.txt
+
+Example Chr1_010.fa is part of human chromosome 1, which size is 10 MB. Full size
+chromosomes and other examples can be found on "UCSC Genome Bioinformatics" site.
+
