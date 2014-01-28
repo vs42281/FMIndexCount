@@ -1,1 +1,19 @@
-Repozitorij za projekt iz predmeta Bioinformatika
+Repository for college "Bioinformatika"
+
+Application is developed using NetBeans IDE V7.4.
+In order to modify application, it is necessary to create a project in NetBeans IDE V7.4.
+Probably it is possible to create project in other IDE-s (e.g. Eclipse) but I haven’t tried.
+
+
+Executable version of application can be found under Release V1.0 and can be start with command:
+
+        java -jar FMIndexCout.jar
+
+or, in case that default amount of allocated memory is not enough:
+
+		java -Xms1024m -Xmx1024m -jar FMIndexCout.jar
+
+where 1024m means initial and maximum amount of "Heap" memory allocated to Java virtual machine.
+This heap size is enough for processing of human chromosome 1 from "UCSC Genome Bioinformatics"
+site. It is possible to increase the heap size even more, up to the limit given by computer and
+operating system used.
