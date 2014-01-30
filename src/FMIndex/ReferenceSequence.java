@@ -258,7 +258,7 @@ public class ReferenceSequence {
             }
 
             /* read given sequence */
-            linkedBufferList = new LinkedList();
+            linkedBufferList = new LinkedList<byte[]>();
             linkedBuffer = new byte[LINKED_BUFFER_SIZE];
             sequenceLength = 0;
             linkedBufferIndex = 0;
@@ -403,7 +403,7 @@ public class ReferenceSequence {
             }
 
             /* read given sequence */
-            linkedBufferList = new LinkedList();
+            linkedBufferList = new LinkedList<byte[]>();
             linkedBuffer = new byte[LINKED_BUFFER_SIZE];
             sequenceLength = 0;
             linkedBufferIndex = 0;

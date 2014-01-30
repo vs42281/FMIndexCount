@@ -1,0 +1,33 @@
+Installing instructions:
+
+1.  navigate to project root directory
+2.  create \src and \bin folders
+3.  copy the following source files to src\ folder:
+
+        AlphabetDictionary.java
+		FMIndexBitString.java
+		FMIndexCountFrame.java
+		FMIndexWaveletTreeNode.java
+		ReferenceSequence.java
+		ReferenceSequenceIndex.java
+		ReportedException.java
+
+4.  compile source files using the following command:
+
+        javac -target 1.6 -source 1.6 -d bin src\*.java
+
+		(Note: javac.exe should be in path
+		    e.g. path = path;c:\Program Files\Java\jdk1.7.0_45\bin )
+
+5.  start application with command:
+
+        java -cp bin FMIndex.FMIndexCountFrame
+
+	or:
+
+        java -Xms1024m -Xmx1024m -cp bin FMIndex.FMIndexCountFrame
+
+	where 1024m means initial and maximum amount of "Heap" memory allocated to Java
+	virtual machine. This heap size is enough for processing of human chromosome 1
+	from "UCSC Genome Bioinformatics" site. It is possible to increase the heap size
+	even more, up to the limit given by computer and operating system used.
